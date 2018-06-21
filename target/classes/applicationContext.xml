@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/mvc
+          http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/aop  
+          http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <!-- Bean definitions go here -->
+    
+    <bean id="userIO" class="com.sg.vendingmachine.ui.SimpleIO"/>
+    
+    <bean id="view" class="com.sg.vendingmachine.ui.MachineViewer">
+        <constructor-arg ref="userIO"/>
+    </bean>
+    
+    <bean id="dao" class="com.sg.vendingmachine.dao.MachineDaoImpl"/>
+    
+    <bean id="service" class="com.sg.vendingmachine.service.MachineServiceLayer">
+        <constructor-arg ref="dao"/>
+    </bean>
+    
+    <bean id="controller" class="com.sg.vendingmachine.controller.VendingController">
+        <constructor-arg ref="view"/>
+        <constructor-arg ref="service"/>
+    </bean>
+    
+    <bean id="auditDao" class="com.sg.vendingmachine.dao.MachineAuditDao"/>
+    
+    <bean id="loggingAdvice" class="com.sg.vendingmachine.advice.MachineLoggingAdvice">
+        <constructor-arg ref="auditDao"/>
+    </bean>
+
+    <aop:config>
+        <aop:aspect id="exceptionsLogging" ref="loggingAdvice">
+            
+            <aop:pointcut id="fundsEx" 
+                expression="execution(* com.sg.vendingmachine.service.MachineServiceLayer.soldItem(..))"/>
+            
+            <aop:after-throwing 
+                
+                method="fundsExceptionLog"
+                throwing="ex"
+                pointcut-ref="fundsEx"
+            />
+            
+            <aop:pointcut id="itemEx" 
+                expression="execution(* com.sg.vendingmachine.service.MachineServiceLayer.validateSelection(..))"/>
+            
+            <aop:after-throwing 
+                method="itemsExceptionLog"
+                throwing="ex"
+                pointcut-ref="itemEx"
+            />
+            
+        </aop:aspect>
+    </aop:config>
+</beans>

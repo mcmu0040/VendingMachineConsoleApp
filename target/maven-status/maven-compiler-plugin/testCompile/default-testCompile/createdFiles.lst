@@ -1,0 +1,3 @@
+com\sg\vendingmachine\service\MachineServiceLayerTest.class
+com\sg\vendingmachine\dao\MachineDaoStubImpl.class
+com\sg\vendingmachine\dao\MachineDaoTest.class

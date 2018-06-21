@@ -1,0 +1,4 @@
+Butter Finger::1.50::10
+Milky Way::3.00::10
+Snickers::2.50::8
+Carmello::1.00::0

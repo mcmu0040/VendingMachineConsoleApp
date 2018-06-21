@@ -1,0 +1,6 @@
+Used to hold a basic inventory to copy to inventory.txt if needed.
+
+Butter Finger::1.50::10
+Milky Way::3.00::10
+Snickers::2.50::10
+Carmello::1.00::10

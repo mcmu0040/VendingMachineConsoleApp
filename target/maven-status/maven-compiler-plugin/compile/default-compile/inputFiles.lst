@@ -1,0 +1,16 @@
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\dao\MachineDaoImpl.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\ui\MachineViewer.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\advice\MachineLoggingAdvice.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\service\MachineServiceLayer.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\service\NoItemInventoryException.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\controller\VendingController.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\App.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\dto\Change.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\service\Administrator.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\dao\MachineAuditDao.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\dao\MachineDao.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\service\InsufficientFundsException.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\dto\Item.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\dao\VendingMachingPersistenceException.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\ui\SimpleIO.java
+C:\Repos\sean-mcmullen-individual-work\VendingMachine\src\main\java\com\sg\vendingmachine\ui\UserIO.java

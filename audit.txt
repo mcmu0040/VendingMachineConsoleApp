@@ -1,0 +1,9 @@
+2018-05-25T09:25:15.309 : BigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): snickers0.41
+2018-05-25T09:28:09.693 : BigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): milky waY0.73
+2018-05-25T09:31:07.614 : InsufficientFundsException THROWN BITCHESBigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): carmello0.72
+2018-05-25T09:40:37.164 : NoItemInventoryException: boolean com.sg.vendingmachine.service.MachineServiceLayer.validateSelection(String): carmello
+2018-05-25T09:40:55.095 : InsufficientFundsException: BigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): snickers1.41
+2018-05-25T10:16:55.476 : InsufficientFundsException: BigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): snickers0.66
+2018-05-29T09:15:55.983 : InsufficientFundsException: BigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): snickers0.10
+2018-05-29T09:16:25.541 : NoItemInventoryException: boolean com.sg.vendingmachine.service.MachineServiceLayer.validateSelection(String): carmello
+2018-05-29T09:16:36.179 : InsufficientFundsException: BigDecimal com.sg.vendingmachine.service.MachineServiceLayer.soldItem(String,BigDecimal): snickers0.60
